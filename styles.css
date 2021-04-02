@@ -1,0 +1,38 @@
+/* reset css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mobile first structure */
+html{
+ font-size: 62.50%;/* 10px */
+}
+
+:root{
+  --background:#fff;
+  --text:rgb(255, 255, 255);
+  --btn:rgb(255, 131, 59);
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/* if the screen is above 768px
+Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+@media screen and (min-width:768px){
+  html{
+    font-size: 75.00%;  /* 12px */
+  } 
+}
+
+@media screen and (min-width:1080px){
+  html{
+    font-size: 87.50%;/* 14px */
+  }
+} 
